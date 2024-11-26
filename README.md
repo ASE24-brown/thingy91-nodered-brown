@@ -19,6 +19,8 @@ Import our flow.json in the data folder
 
 Install in palette node-red-dashboard 3.6.5
 
+The dashboard works only when listening to Thingy Brown-2 and Brown-3, so you might need to change the id to see it working
+
 
 ## How to Use
 
