@@ -18,3 +18,12 @@ This repository contains a pre-configured Node-RED environment with custom flows
 2. Start Docker
     ```bash
     docker-compose up
+
+3. Access Node Red Editor
+    ```bash
+    http://localhost:1880
+
+4. Access Dashboard
+
+    ```bash
+    http://localhost:1880/ui
