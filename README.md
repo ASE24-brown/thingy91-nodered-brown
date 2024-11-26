@@ -16,5 +16,5 @@ This repository contains a pre-configured Node-RED environment with custom flows
    cd thingy91-nodered-brown
 
 2. Start Docker
-    ``sh
+    ```bash
     docker-compose up
