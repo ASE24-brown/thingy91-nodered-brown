@@ -1,43 +1,57 @@
-# thingy91-nodered-brown
+# Thingy91 Node-RED Brown
 
-# Node-RED Project Template
-
-This repository contains a pre-configured Node-RED environment with custom flows and settings.
+This repository contains a preconfigured Node-RED environment and flow designed to work with Thingy Brown-2 and Brown-3 devices.
 
 ## Features
 - Preconfigured Node-RED flows and dashboard
 - Ready-to-use Docker environment
+- Compatible with Thingy:91 devices for live data visualization
 
-# Quick fix, since there's an issue to use our installation
+---
 
-To run node red on docker
+## Running Node-RED with Docker
 
-   ```bash
-   docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
+To set up Node-RED using Docker, run the following command:
+
+```bash
+docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
+```
+
+---
+
+## Importing the Node-RED Flow
+
+1. Download the `flow.json` file from this repository's `data` folder.
+2. Open your Node-RED instance by navigating to:
    ```
-Import our flow.json in the data folder
+   http://localhost:1880
+   ```
+3. In the Node-RED editor:
+   - Go to the **menu** (top right) > **Import**.
+   - Select the `flow.json` file.
+   - Click **Import** and then **Deploy** to activate the flow.
 
-Install in palette node-red-dashboard 3.6.5
+---
 
-The dashboard works only when listening to Thingy Brown-2 and Brown-3, so you might need to change the id to see it working
+## Node-RED Dashboard
 
+1. Install the **node-red-dashboard** palette (version 3.6.5) in Node-RED:
+   - Open the Node-RED editor.
+   - Go to the **menu > Manage palette > Install**.
+   - Search for `node-red-dashboard` and install version `3.6.5`.
 
-## How to Use
+2. Access the dashboard at:
+   ```
+   http://localhost:1880/ui
+   ```
 
-1. Clone this repository:
-   ```bash
-   git clone git@github.com:ASE24-brown/thingy91-nodered-brown.git
-   cd thingy91-nodered-brown
+---
 
-2. Start Docker
-    ```bash
-    docker-compose up
+## Note
 
-3. Access Node Red Editor
-    ```bash
-    http://localhost:1880
+The dashboard is configured to work with **Thingy Brown-2** and **Thingy Brown-3**.  
+If you are using different devices, update the flow to reflect the correct device IDs.
 
-4. Access Dashboard
+---
 
-    ```bash
-    http://localhost:1880/ui
+Let me know if you need help setting up your Docker environment or customizing your Node-RED flows further!
