@@ -51,7 +51,3 @@ docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node
 
 The dashboard is configured to work with **Thingy Brown-2** and **Thingy Brown-3**.  
 If you are using different devices, update the flow to reflect the correct device IDs.
-
----
-
-Let me know if you need help setting up your Docker environment or customizing your Node-RED flows further!
