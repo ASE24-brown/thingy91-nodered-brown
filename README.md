@@ -40,7 +40,13 @@ docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node
    - Go to the **menu > Manage palette > Install**.
    - Search for `node-red-dashboard` and install version `3.6.5`.
 
-2. Access the dashboard at:
+2. Enter the Username and Password of your thingy-91
+   - Edit mqtt in node
+   - Edit mqtt-broker node (Edit logo next to server)
+   - Security Tab
+   - Enter your username and password 
+
+4. Access the dashboard at:
    ```
    http://localhost:1880/ui
    ```
